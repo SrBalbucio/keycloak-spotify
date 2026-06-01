@@ -41,12 +41,10 @@ public class SpotifyIdentityProvider extends AbstractOAuth2IdentityProvider<Spot
 
         final BrokeredIdentityContext context = new BrokeredIdentityContext(profile.getId(), getConfig());
         context.setBrokerUserId(profile.getId());
-        context.setUsername("spotify-" + profile.getId());
+        context.setUsername(profile.getDisplayName());
         context.setModelUsername(context.getUsername());
         context.setEmail(profile.getEmail());
-        context.setName(profile.getDisplayName());
         context.setIdp(this);
-
         context.setUserAttribute("spotify.id", profile.getId());
         context.setUserAttribute("spotify.display_name", Objects.toString(profile.getDisplayName(), ""));
         context.setUserAttribute("spotify.country", Objects.toString(profile.getCountry(), ""));

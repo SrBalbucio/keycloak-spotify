@@ -5,6 +5,7 @@
   <artifactId>keycloak-spotify</artifactId>
   <version>1.0.0</version>
   <build>
+    <finalName>keycloak-spotify</finalName>
     <pluginManagement>
       <plugins>
         <plugin>

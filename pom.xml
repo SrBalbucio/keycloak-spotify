@@ -6,7 +6,7 @@
 
     <groupId>balbucio.keycloak.spotify</groupId>
     <artifactId>keycloak-spotify</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
 
     <properties>
         <version.keycloak>26.6.2</version.keycloak>
@@ -70,6 +70,7 @@
     </dependencies>
 
     <build>
+        <finalName>keycloak-spotify</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
