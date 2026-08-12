@@ -25,10 +25,11 @@ steps:
       files:
         - target/keycloak-spotify.jar
       checksum: sha256
+      checksum-flatten: true
       title: ${CI_COMMIT_TAG}
       draft: false
-      prerelease: auto
       file_exists: overwrite
+      overwrite: true
 
 when:
   - event: tag
