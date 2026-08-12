@@ -18,7 +18,7 @@ steps:
       - mvn -B clean package
 
   - name: github-release
-    image: woodpeckerci/plugin-github-release:3
+    image: woodpeckerci/plugin-release:0.3.1
     settings:
       api_key:
         from_secret: github_access_token
