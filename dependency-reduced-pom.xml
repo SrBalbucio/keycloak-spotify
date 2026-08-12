@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>balbucio.keycloak.spotify</groupId>
   <artifactId>keycloak-spotify</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <build>
     <finalName>keycloak-spotify</finalName>
     <pluginManagement>
@@ -98,25 +98,25 @@
     <dependency>
       <groupId>org.keycloak</groupId>
       <artifactId>keycloak-core</artifactId>
-      <version>26.6.2</version>
+      <version>26.6.3</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.keycloak</groupId>
       <artifactId>keycloak-server-spi</artifactId>
-      <version>26.6.2</version>
+      <version>26.6.3</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.keycloak</groupId>
       <artifactId>keycloak-server-spi-private</artifactId>
-      <version>26.6.2</version>
+      <version>26.6.3</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
       <groupId>org.keycloak</groupId>
       <artifactId>keycloak-services</artifactId>
-      <version>26.6.2</version>
+      <version>26.6.3</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
@@ -153,9 +153,8 @@
     </dependency>
   </dependencies>
   <properties>
-    <maven.compiler.release>17</maven.compiler.release>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <version.junit>5.11.4</version.junit>
-    <version.keycloak>26.6.2</version.keycloak>
+    <version.keycloak>26.6.3</version.keycloak>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 </project>
